@@ -1,0 +1,42 @@
+﻿@using RateCustomers.Models
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           @ViewBag.appTitle
+        </title>
+        <meta charset="utf-8" />
+        <link href="~/Stylesheet.css" rel="somecss"/>
+    </head>
+    <body>
+        <div class="box">
+            @{
+            HomePageModel? homePageModel = (HomePageModel?)ViewData["homePageModel"];
+        }
+        <h1>Hello and Welcome MR.@ViewBag.homePageModel.LoginName you have logged in </h1>
+    @{
+            if(homePageModel?.Password == homePageModel?.ConfirmPassword)
+            {
+                <h2>Password Matches</h2>
+            }
+            else
+            {
+                <h2>password Doesnt Matches</h2>
+            }
+
+        }
+        @if (string.IsNullOrEmpty(homePageModel?.LoginName))
+        {
+            <h3>You are Logged in </h3>
+        }
+        @switch (homePageModel?.LoginName)
+        {
+            case "Wolverine":
+            <h3>Hello Wolverine Your Login page is this </h3>
+            break;
+        }
+
+        </div>
+    </body>
+</html>
