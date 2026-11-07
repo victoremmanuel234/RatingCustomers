@@ -30,3 +30,4 @@
 /Users/a1990/Desktop/RatingCustomers/RateCustomers/obj/Debug/net10.0/RateCustomers.genruntimeconfig.cache
 /Users/a1990/Desktop/RatingCustomers/RateCustomers/obj/Debug/net10.0/ref/RateCustomers.dll
 /Users/a1990/Desktop/RatingCustomers/RateCustomers/obj/Debug/net10.0/compressed/g2eu3tb5dm-{0}-jqxz85kx00-jqxz85kx00.gz
+/Users/a1990/Desktop/RatingCustomers/RateCustomers/obj/Debug/net10.0/RateCustomers.sourcelink.json
